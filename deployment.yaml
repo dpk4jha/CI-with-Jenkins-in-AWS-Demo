@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -14,7 +15,7 @@ spec:
     spec:
       containers:
       - name: webapp1
-        image: dpk4jha/tomcat02:tagversion
+        image: dpk4jha/k8s_tomcat05:tagversion
         ports:
         - containerPort: 8080
 ---
