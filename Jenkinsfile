@@ -4,7 +4,7 @@ pipeline {
 		PROJECT_ID = 'dockerdemo'
 		CLUSTER_NAME = 'kuber-dpk'
 		LOCATION = 'europe-west1-b'
-		CREDENTIALS_ID = 'k8'
+		CREDENTIALS_ID = 'kubernetes'
 	}
 	stages {
 		stage ("Checkout code") {
@@ -27,7 +27,7 @@ pipeline {
 		stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("dpk4jha/k8s_tomcat02:${env.BUILD_ID}")
+                    myapp = docker.build("dpk4jha/k8s_tomcat04:${env.BUILD_ID}")
                 }
             }
         }
