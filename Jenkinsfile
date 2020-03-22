@@ -1,7 +1,7 @@
 pipeline {
 	agent any 
 	environment {
-		PROJECT_ID = 'dockerdemo'
+		PROJECT_ID = 'dpk-devops'
 		CLUSTER_NAME = 'kuber-dpk'
 		LOCATION = 'europe-west1-b'
 		CREDENTIALS_ID = 'kubernetes'
