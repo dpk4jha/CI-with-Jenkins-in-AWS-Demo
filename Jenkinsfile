@@ -27,7 +27,7 @@ pipeline {
 		stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("dpk4jha/k8s_tomcat04:${env.BUILD_ID}")
+                    myapp = docker.build("dpk4jha/k8s_tomcat05:${env.BUILD_ID}")
                 }
             }
         }
